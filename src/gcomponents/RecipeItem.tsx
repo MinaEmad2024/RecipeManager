@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import type { Recipe } from "../Pages/detailsPage"
+import type { Item } from "../Hooks/Api"
 
 
 interface ItemProp {
-    item: Recipe
+    item: Item
 }
 export default function RecipeItem({item}: ItemProp){
 

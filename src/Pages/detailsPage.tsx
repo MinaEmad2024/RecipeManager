@@ -76,7 +76,12 @@ export default function Details(){
             <div>
                 <button
                     className="p-3 px-8 rounded-lg text-sm uppercase font-medium tracking-wider mt-3 inline-block shadow-md bg-black text-white"
-                    onClick={() => addToFavoriteList(recipeDetailsData)}
+                    onClick={() => {
+                        if(recipeDetailsData){
+                            addToFavoriteList(recipeDetailsData)
+
+                        }
+                    }}
                 >
                     {
                        favoriteList && favoriteList.length > 0 
