@@ -9,5 +9,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: process.env.VITE_BASE_PATH || "/Redux_Cart"
+  base: process.env.VITE_BASE_PATH || "/"
 })
